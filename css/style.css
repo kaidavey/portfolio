@@ -13,7 +13,7 @@ body {
     font-family: "Poppins", sans-serif;
     padding: 0;
     margin: 0;
-    background-image: url('../images/corkboard.jpg');
+    background-image: url('../graphics/corkboard.jpg');
     background-size: contain;
     background-repeat: repeat;
     background-attachment: fixed;

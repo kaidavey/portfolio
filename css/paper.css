@@ -5,7 +5,7 @@
     min-height: 80vh;
     padding: 0 15% 5% 15%;
     margin: 2% 10%;
-    background: url("../images/tapedpaper.png") no-repeat center/contain;
+    background: url("../graphics/tapedpaper.png") no-repeat center/contain;
     display: flex;
     flex-direction: column;
     align-items: center;
