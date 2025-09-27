@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Final - About</title>
+  <link rel="stylesheet" href="css/style.css" type="text/css">
+  <link rel="stylesheet" href="css/about.css" type="text/css">
+  <link rel="icon" type="image/png" href="images/favicon.ico">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Pixelify+Sans&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300&display=swap" type="text/css">
+</head>
+<body>
+<header class="about">
+  <h1 class="heading">About</h1>
+  <h1 class="heading">Me</h1>
+</header>
+<nav class="about">
+  <ul>
+    <li class="nav"><a class="nav" href="index.html">HOME</a></li>
+    <li class="nav"><a class="nav" href="about.html">ABOUT</a></li>
+    <li class="nav"><a class="nav" href="creative.html">DESIGNS</a></li>
+    <li class="nav"><a class="nav" href="courses.html">COURSES</a></li>
+    <li class="nav"><a class="nav" href="contact.html">CONTACT</a></li>
+  </ul>
+</nav>
+<div class="content">
+  <div class="page">
+    <h2 id="heading">Hi There! 👋</h2>
+    <p>My name is Kai Davey, and I am a first-year Computer Science student at the UCLA. I am passionate about 💻 software design, 📱 UI/UX design, and 🎨 digital art!</p>
+    <div class="carousel">
+      <div class="carousel-slide">
+        <img src="images/portrait.jpg" alt="Portrait of Kai">
+        <img src="images/portrait2.jpg" alt="Portrait of Kai 2">
+        <img src="images/portrait3.jpg" alt="Portrait of Kai 3">
+      </div>
+      <button class="prev">&#10094;</button>
+      <button class="next">&#10095;</button>
+    </div>
+    <h3 id="fact">Fun Fact</h3>
+    <p>I LOVE going outdoors! You will often catch me spending my weekends 🏃 running, 🧗‍♂️ rock climbing, 🥾 hiking, and 🎒 backpacking. My favorite running route in Seattle is from my school to the Fremont Troll. It is roughly 7.3 miles in total.</p>
+    <h3 class="goals">Goals</h3>
+    <img src="images/stickers/uclacursive.png" class="sticker" id="ucla" alt="UCLA Sticker">
+    <p class="goals">Besides pursuing my Computer Science degree, I hope to specialize in design and interface or take classes to improve my web/app design skills. I also hope to minor in Chinese and study abroad in Singapore to improve my speaking skills!</p>
+  </div>
+</div> <!-- End of Content -->
+<footer class="about">
+  <p class="credits">Made from scratch by Kai</p>
+  <a href=https://instagram.com/kaidavey_" target="_blank"><img src="images/sprites/instagram.png" class="socials" alt="Instagram Logo"></a>
+  <a href=https://linkedin.com/kaidavey" target="_blank"><img src="images/sprites/linkedin.png" class="socials" id="ln" alt="LinkedIn Logo"></a>
+</footer>
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    const slide = document.querySelector(".carousel-slide");
+    const images = document.querySelectorAll(".carousel-slide img");
+    const prev = document.querySelector(".prev");
+    const next = document.querySelector(".next");
+
+    let index = 0;
+
+    function showSlide(i) {
+      index = (i + images.length) % images.length; // wrap around
+      slide.style.transform = `translateX(-${index * 100}%)`;
+    }
+
+    prev.addEventListener("click", () => showSlide(index - 1));
+    next.addEventListener("click", () => showSlide(index + 1));
+
+    setInterval(() => {
+      showSlide(index + 1);
+    }, 7000);
+  });
+</script>
+</body>
+</html>

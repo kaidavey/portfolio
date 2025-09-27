@@ -1,0 +1,115 @@
+/* Header Color */
+.designs {
+    background-color: #62d1b4;
+}
+
+/* Pink Pinned Page Styling Settings */
+.page {
+    display: block;
+    width: 50%;
+    padding: 3%;
+    margin: 35px auto;
+    background-image: url("../images/page-pinkpin.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center top;
+    overflow: hidden;
+}
+
+/* My Coolest Projects Header Formatting */
+#heading {
+    text-align: center;
+}
+
+/* All Figures Expand to the Size of Containing Element */
+figure {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+/* Image Captions General Styling */
+figcaption {
+    text-align: left;
+    margin: 10px 10px;
+}
+/* Caption Headings Styling */
+.item-heading {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+/* Pad the bottom of the Logo Div */
+#logos-container {
+    margin-bottom: 30px;
+}
+
+/* Create Grids for the Figures inside Logos and Merch Sections */
+#logos-grid {
+    display: grid;
+    width: 100%;
+    grid-template-columns: 25% 25% 25% 25%;
+}
+#merch-grid {
+    display: grid;
+    width: 100%;
+    grid-template-columns: 50% 50%;
+}
+
+/* Styling All Logo and Merch Items */
+.logos, .merch {
+    width: 80%;
+    margin: 0 10%;
+    transition: transform 0.3s ease-in-out;
+}
+/* When user hovers over items, they float */
+.logos:hover, .merch:hover {
+    transform: translateY(-5px);
+}
+
+/* Split Merchandise and App Sections in half to create columns */
+.col {
+    float: left;
+    width: 50%;
+}
+
+/* Video Styling */
+video {
+    border-radius: 20px;
+    margin-left: 30px;
+}
+/* Video Description Styling */
+#app-description {
+    float: left;
+    width: 35%;
+    margin-left: 15px;
+}
+
+#lightbox {
+    display: none; /* hidden by default */
+    position: fixed;
+    z-index: 1000; /* above everything */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.65); /* dark overlay */
+    justify-content: center;
+    align-items: center;
+}
+
+/* Click on Sticker to Expand Feature */
+#lightbox img {
+    max-width: 80%;
+    max-height: 80%;
+}
+
+#lightbox-close {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    font-size: 40px;
+    font-weight: lighter;
+    color: white;
+    cursor: pointer;
+}

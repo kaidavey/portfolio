@@ -1,0 +1,47 @@
+/* Sticky Note Formatting Within Div */
+.note {
+    display: flex;
+    justify-content: center;
+    float: left !important;
+    width: 30%;
+    height: 470px;
+    margin: 1.66%;
+    background-image: url('../images/stickynote-yellow.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center top;
+}
+
+/* Pad the top of the Image + caption */
+figure {
+    padding-top: 15%;
+}
+/* Image Styling */
+.thumbnail {
+    width: 100%;
+    padding-top: 0.5em;
+}
+/* Styling for the Caption Heading */
+figcaption {
+    text-align: center;
+    font-size: 18px;
+    font-weight: 500;
+    color: black;
+}
+/* Styling for the Caption */
+.subcaption {
+    text-align: left;
+    font-size: 14px;
+    font-weight: 300;
+    color: black;
+}
+
+/* For screens smaller than 900 */
+@media (max-width: 900px) {
+    .note {
+        height: 430px;
+    }
+    figure {
+        padding-top: 20%;
+    }
+}

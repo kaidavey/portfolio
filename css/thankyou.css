@@ -1,0 +1,16 @@
+/* Header Color */
+.contact {
+    background-color: #d34f73;
+}
+
+/* Thank You Message Styling */
+p {
+    position: absolute;
+    text-align: center;
+    font-size: 20px;
+}
+
+/* Submit Another Response Font Styling */
+.repeat {
+    font-size: 14px;
+}

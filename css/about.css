@@ -1,0 +1,93 @@
+/* Header Color */
+.about {
+    background-color: #b47aea;
+}
+
+/* Green Pin Page Background */
+.page {
+    display: block;
+    width: 50%;
+    padding: 3%;
+    margin: 35px auto;
+    background-image: url("../images/page-greenpin.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center top;
+    overflow: hidden;
+}
+
+/* Text Elements on Page Styling */
+#heading {
+    text-align: center;
+}
+#fact {
+    margin-top: 30px;
+}
+.goals {
+    float: left;
+    clear: left;
+    width: 65%;
+}
+p.goals {
+    padding: 0;
+    margin: 0;
+}
+#ucla {
+    float: right;
+    width: 210px;
+    height: auto;
+    transform: rotate(-2deg);
+}
+#ucla:hover {
+    transform: translateY(-5px);
+}
+.bc-blurb {
+    display: block;
+    float: left;
+    clear: both;
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 0;
+}
+h3.bc-blurb {
+    margin-top: 30px;
+}
+
+/* Carousel Styling */
+.carousel {
+    position: relative;
+    width: 250px;
+    height: 300px;
+    margin: auto;
+    overflow: hidden;
+}
+.carousel-slide {
+    display: flex;
+    width: 100%;
+    transition: transform 0.5s ease-in-out;
+}
+.carousel-slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.carousel button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: transparent;
+    color: white;
+    font-size: 16px;
+    font-weight: lighter;
+    border: none;
+    padding: 8px 6px;
+    cursor: pointer;
+    border-radius: 16px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+.carousel:hover button {
+    opacity: 1;
+}
+.carousel .prev { left: 10px; }
+.carousel .next { right: 10px; }

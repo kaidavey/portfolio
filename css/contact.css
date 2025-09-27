@@ -1,0 +1,39 @@
+/* Header Color */
+.contact {
+    background-color: #d34f73;
+}
+
+/* Font Styling for Form */
+.label {
+    font-size: 14px;
+}
+
+/* Contact Message Styling */
+.msg {
+    display: block;
+}
+
+/* Error Messages Styling */
+.err {
+    padding: 0;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    font-size: 12px;
+    color: red;
+}
+
+/* Submit Button Styling */
+.button-link {
+    font-size: 12px;
+    width: fit-content;
+    padding: 12px 18px;
+    margin: 10px 2px 2px;
+    background-color: #d34f73;
+    color: #000;
+    text-decoration: none;
+    border: none;
+}
+.button-link:hover {
+    color: #fff;
+    text-decoration: underline;
+}
