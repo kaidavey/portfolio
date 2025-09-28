@@ -29,6 +29,7 @@ figure {
 }
 /* Image Captions General Styling */
 figcaption {
+    font-size: 11pt;
     text-align: left;
     margin: 10px 10px;
 }
