@@ -19,6 +19,7 @@
     <li class="nav"><a class="nav" href="index.html">HOME</a></li>
     <li class="nav"><a class="nav" href="about.html">ABOUT</a></li>
     <li class="nav"><a class="nav" href="creative.html">DESIGNS</a></li>
+    <li class="nav"><a class="nav" href="media.html">FIGMA</a></li>
     <li class="nav"><a class="nav" href="courses.html">COURSES</a></li>
     <li class="nav"><a class="nav" href="contact.html">CONTACT</a></li>
   </ul>
@@ -27,15 +28,7 @@
   <div class="page">
     <h2 id="heading">Hi There! 👋</h2>
     <p>My name is Kai Davey, and I am a first-year Computer Science student at the UCLA. I am passionate about 💻 software design, 📱 UI/UX design, and 🎨 digital art!</p>
-    <div class="carousel">
-      <div class="carousel-slide">
-        <img src="graphics/images/portrait.jpg" alt="Portrait of Kai">
-        <img src="graphics/portrait2.jpg" alt="Portrait of Kai 2">
-        <img src="graphics/portrait3.jpg" alt="Portrait of Kai 3">
-      </div>
-      <button class="prev">&#10094;</button>
-      <button class="next">&#10095;</button>
-    </div>
+    <img src="graphics/images/portrait.jpg" class="sticker" id="portrait" alt="Portrait of Kai">
     <h3 id="fact">Fun Fact</h3>
     <p>I LOVE going outdoors! You will often catch me spending my weekends 🏃 running, 🧗‍♂️ rock climbing, 🥾 hiking, and 🎒 backpacking. My favorite running route in Seattle is from my school to the Fremont Troll. It is roughly 7.3 miles in total.</p>
     <h3 class="goals">Goals</h3>
@@ -48,27 +41,5 @@
   <a href=https://instagram.com/kaidavey_" target="_blank"><img src="graphics/sprites/instagram.png" class="socials" alt="Instagram Logo"></a>
   <a href=https://linkedin.com/kaidavey" target="_blank"><img src="graphics/sprites/linkedin.png" class="socials" id="ln" alt="LinkedIn Logo"></a>
 </footer>
-<script>
-  document.addEventListener("DOMContentLoaded", () => {
-    const slide = document.querySelector(".carousel-slide");
-    const images = document.querySelectorAll(".carousel-slide img");
-    const prev = document.querySelector(".prev");
-    const next = document.querySelector(".next");
-
-    let index = 0;
-
-    function showSlide(i) {
-      index = (i + images.length) % images.length; // wrap around
-      slide.style.transform = `translateX(-${index * 100}%)`;
-    }
-
-    prev.addEventListener("click", () => showSlide(index - 1));
-    next.addEventListener("click", () => showSlide(index + 1));
-
-    setInterval(() => {
-      showSlide(index + 1);
-    }, 7000);
-  });
-</script>
 </body>
 </html>
