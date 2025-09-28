@@ -5,12 +5,16 @@
 
 /* Pink Pinned Page Styling Settings */
 .page {
-    display: block;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     width: 60%;
     height: auto;
     padding: 3%;
     margin: 35px auto;
     background: #fff;
+    text-align: center;
 }
 
 /* My Coolest Projects Header Formatting */
